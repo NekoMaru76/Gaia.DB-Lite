@@ -1,0 +1,32 @@
+{
+  "name": "gaia.db-lite",
+  "version": "0.0.1-alpha1",
+  "description": "A lite version of Gaia.DB.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node test/single.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NekoMaru76/Gaia.DB-Lite.git"
+  },
+  "keywords": [
+    "gaia.db",
+    "evodev",
+    "nekomaru76",
+    "database",
+    "db"
+  ],
+  "author": "nekomaru76",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NekoMaru76/Gaia.DB-Lite/issues"
+  },
+  "homepage": "https://github.com/NekoMaru76/Gaia.DB-Lite#readme",
+  "dependencies": {
+    "@evodev/eventemitter": "^1.0.7",
+    "lodash": "^4.17.21",
+    "type-instance": "^0.0.2"
+  },
+  "devDependencies": {}
+}
