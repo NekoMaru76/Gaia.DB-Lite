@@ -1,7 +1,7 @@
 # Gaia.DB-Lite
 A lite version of Gaia.DB.
 
-# Example
+# Examples
 ## Singlethreaded
 ```js
 const { Database } = require(`gaia.db-lite`);
@@ -41,11 +41,11 @@ setImmediate(async () => {
 ### new Database(folderPath?: String = "./database")
 - folderPath Database's folder path.
 Create new database instance.
-### Database#save() -> Promise<Database#read()>
+### Database#save() -> \Promise<Database#read()>
 Save the database.
-### Database#read() -> Promise<this>
+### Database#read() -> \Promise<this>
 Read the database files and refresh cache (database object).
-### Database#setup() -> Promise<this>
+### Database#setup() -> \Promise<this>
 Create the database folder if it's not exist and do other stuffs.
 ### Database#set(value: Any, path?: String) -> this
 Change path's value of database object. If path is a falsy value, it will change the database object and the value must be an object.
@@ -62,14 +62,14 @@ Database's folder path.
 - folderPath Database's folder path.
 - childFilePath Default child's file path for Master#spawn.
 Master class have same properties and methods with Database and [EventEmitter](https://npmjs.com/package/@evodev/eventemitter).
-### Master#fork(childFilePath?: String) -> Promise<[ChildProcess](https://nodejs.org/api/child_process.html)>
+### Master#fork(childFilePath?: String) -> \Promise<[ChildProcess](https://nodejs.org/api/child_process.html)>
 Fork a file to create new child.
 ### Child
-#### global.$set(value: Any, path?: String) -> Promise<this>
+#### global.$set(value: Any, path?: String) -> \Promise<this>
 A copy of Database#set.
-#### global.$get(value: Any) -> Promise<Any>
+#### global.$get(value: Any) -> \Promise<Any>
 A copy of Database#get.
-#### global.$delete(path?: String) -> Promise<this>
+#### global.$delete(path?: String) -> \Promise<this>
 A copy of Database#delete.
 #### global.$save() -> Promise<this>
 A copy of Database#save.

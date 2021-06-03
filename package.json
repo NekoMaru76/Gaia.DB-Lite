@@ -1,6 +1,6 @@
 {
   "name": "gaia.db-lite",
-  "version": "0.0.1-alpha2",
+  "version": "0.0.1-alpha3",
   "description": "A lite version of Gaia.DB.",
   "main": "src/index.js",
   "scripts": {
