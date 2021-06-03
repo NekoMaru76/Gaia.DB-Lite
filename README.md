@@ -41,7 +41,6 @@ setImmediate(async () => {
 ### new Database(folderPath?: String = "./database")
 - folderPath Database's folder path.
 Create new database instance.
-### Database
 ### Database#save() -> Promise<Database#read()>
 Save the database.
 ### Database#read() -> Promise<this>
@@ -81,6 +80,6 @@ Database's folder path.
 [PayPal](https://paypal.me/nekomaru76)
 
 # Developer
-Discord: Ganora Mirush#9524
-NPM: nekomaru76
+Discord: Ganora Mirush#9524<br />
+NPM: nekomaru76<br />
 GitHub: NekoMaru76
