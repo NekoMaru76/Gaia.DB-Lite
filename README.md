@@ -41,8 +41,10 @@ setImmediate(async () => {
 ### new Database(folderPath?: String = "./database")
 - folderPath Database's folder path.
 Create new database instance.
-### Database#save() -> Promise<Database#read()>
-Save the database.
+### Database#save(maxSizePerFile?: Number = 1024) -> Promise<Database#read()>
+- maxSizePerFile Max buffer size per db file in bytes.
+Save the database.<br />
+Note: Stored in multiple files.
 ### Database#read() -> Promise\<this>
 Read the database files and refresh cache (database object).
 ### Database#setup() -> Promise\<this>
@@ -71,7 +73,7 @@ A copy of Database#set.
 A copy of Database#get.
 #### global.$delete(path?: String) -> Promise\<this>
 A copy of Database#delete.
-#### global.$save() -> Promise\<this>
+#### global.$save(maxSizePerFile?: Number = 1024) -> Promise\<this>
 A copy of Database#save.
 ##### global.$folderPath
 Database's folder path.
